@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "TagHeart",
+  "version": "0.1",
+  "web_accessible_resources": [
+    "*.png",
+    "*.mp3",
+    "*.woff2"
+  ],
+  "content_scripts": [
+    {
+      "matches": [ "http://tagpro-maptest.koalabeast.com/*", "http://tagpro-origin.koalabeast.com/*", "http://tagpro-chord.koalabeast.com/*", "http://tagpro-pi.koalabeast.com/*", "http://tagpro-centra.koalabeast.com/*", "http://tagpro-diameter.koalabeast.com/*", "http://tagpro-radius.koalabeast.com/*", "http://tagpro-sphere.koalabeast.com/*" ],
+      "js": ["js/main.js"],
+      "css": ["css/fonts.css"]
+    }
+  ],
+  "permissions": ["tabs"]
+}
