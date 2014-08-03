@@ -19,13 +19,7 @@
 }
 
 #time {
-	background-color: rgba(0, 0, 0, 0.85);
-	border-radius: 1 px;
-	color: White;
-	font-family: Arial;
-
-	position: absolute;
-	top: 0;
+	border: thin solid White;
 	left: 50%;
 	transform: translate(-50%, 0%);
 }

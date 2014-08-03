@@ -11,6 +11,7 @@ function GameView() {
 
 	var time = document.createElement("div");
 	time.id = "time";
+	time.className = "score";
 	document.body.appendChild(time);
 
 	var public = {
@@ -32,7 +33,7 @@ function GameView() {
 			} else {
 				timeString += ("0" + seconds);
 			}
-			
+
 			$("#time").html(timeString);
 		}
 	};
