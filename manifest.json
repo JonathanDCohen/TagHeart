@@ -14,5 +14,8 @@
       "css": ["css/fonts.css"]
     }
   ],
-  "permissions": ["tabs"]
+  "permissions": ["tabs"],
+  "icons": {
+    "128": "images/icon.png"
+  }
 }
