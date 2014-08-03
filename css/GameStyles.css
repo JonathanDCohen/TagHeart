@@ -3,14 +3,19 @@
 	border-radius: 1 px;
 	color: White;
 	font-family: Arial;
+
+	position: absolute;
+	top: 0%;
 }
 
 #redScore {
 	border: thin solid rgb(150, 0, 0);
+	left: 0%;
 }
 
 #blueScore {
 	border: thin solid rgb(0, 0, 150);
+	right: 0%;
 }
 
 #time {
@@ -18,4 +23,9 @@
 	border-radius: 1 px;
 	color: White;
 	font-family: Arial;
+
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0%);
 }
