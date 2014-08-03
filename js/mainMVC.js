@@ -1,0 +1,1 @@
+var gm = new GameModel(0, 0, 1000);

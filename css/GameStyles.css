@@ -1,0 +1,21 @@
+.score {
+	background-color: rgba(0, 0, 0, 0.85);
+	border-radius: 1 px;
+	color: White;
+	font-family: Arial;
+}
+
+#redScore {
+	border: thin solid rgb(150, 0, 0);
+}
+
+#blueScore {
+	border: thin solid rgb(0, 0, 150);
+}
+
+#time {
+	background-color: rgba(0, 0, 0, 0.85);
+	border-radius: 1 px;
+	color: White;
+	font-family: Arial;
+}
