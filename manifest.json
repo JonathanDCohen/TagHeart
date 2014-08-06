@@ -14,8 +14,15 @@
       "js": ["js/jquery-2.1.1.min.js", "js/GameView.js", "js/GameModel.js", "js/mainMVC.js"]
     }
   ],
-  "permissions": ["tabs"],
+  "permissions": ["storage", "tabs"],
   "icons": {
     "128": "images/icon.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "images/icon19.png"
+    },
+    "default_title": "TagHeart",
+    "default_popup": "html/options.html"
   }
 }
