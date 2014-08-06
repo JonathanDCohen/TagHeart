@@ -23,6 +23,6 @@
       "19": "images/icon19.png"
     },
     "default_title": "TagHeart",
-    "default_popup": "html/options.html"
+    "default_popup": "popup/options.html"
   }
 }
