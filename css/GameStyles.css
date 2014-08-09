@@ -10,16 +10,28 @@
 
 #redScore {
 	border: thin solid rgb(150, 0, 0);
-	left: 0%;
+	left: 30%;
 }
 
 #blueScore {
 	border: thin solid rgb(0, 0, 150);
-	right: 0%;
+	right: 30%;
 }
 
 #time {
 	border: thin solid White;
 	left: 50%;
 	transform: translate(-50%, 0%);
+}
+
+#redLogo {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+
+#blueLogo {
+	position: absolute;
+	top: 0%;
+	right: 0%;
 }

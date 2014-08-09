@@ -7,6 +7,10 @@
     "*.mp3",
     "*.woff2"
   ],
+  "background": {
+      "scripts": ["js/teamSettings.js"],
+      "persistent": false
+    },
   "content_scripts": [
     {
       "matches": [ "http://tagpro-maptest.koalabeast.com/*", "http://tagpro-origin.koalabeast.com/*", "http://tagpro-chord.koalabeast.com/*", "http://tagpro-pi.koalabeast.com/*", "http://tagpro-centra.koalabeast.com/*", "http://tagpro-diameter.koalabeast.com/*", "http://tagpro-radius.koalabeast.com/*", "http://tagpro-sphere.koalabeast.com/*" ],
