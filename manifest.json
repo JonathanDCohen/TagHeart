@@ -15,7 +15,7 @@
     {
       "matches": [ "http://tagpro-maptest.koalabeast.com/*", "http://tagpro-origin.koalabeast.com/*", "http://tagpro-chord.koalabeast.com/*", "http://tagpro-pi.koalabeast.com/*", "http://tagpro-centra.koalabeast.com/*", "http://tagpro-diameter.koalabeast.com/*", "http://tagpro-radius.koalabeast.com/*", "http://tagpro-sphere.koalabeast.com/*" ],
       "css": ["css/fonts.css", "css/GameStyles.css"],
-      "js": ["js/jquery-2.1.1.min.js", "js/GameView.js", "js/GameModel.js", "js/mainMVC.js"]
+      "js": ["js/jquery-2.1.1.min.js", "js/utility.js", "js/GameView.js", "js/GameModel.js", "js/mainMVC.js"]
     }
   ],
   "permissions": ["storage", "tabs"],

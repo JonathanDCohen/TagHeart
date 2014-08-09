@@ -7,12 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
 		var blueSelector = document.getElementById("blueTeam");
 		var blueTeam = blueSelector.options[blueSelector.selectedIndex].text;
 
-		// var port = chrome.runtime.connect({name:"optionsPage"});
-		// port.postMessage({
-		// 	messageType: "teamChange",
-		// 	red: redTeam.options[redTeam.selectedIndex].text,
-		// 	blue: blueTeam.options[blueTeam.selectedIndex].text
-		// });
 		chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
 			var message = {
 				msgType: "teamChange",

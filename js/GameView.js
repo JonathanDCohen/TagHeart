@@ -1,18 +1,42 @@
 function GameView() {
+	var vp = $("#viewPort");
+
+	var canvasWrap = document.createElement("div");
+	document.body.appendChild(canvasWrap);
+	canvasWrap.style.height = vp[0].style.height;
+	canvasWrap.style.width = vp[0].style.width;
+	canvasWrap.id = "canvasWrap";
+	vp.appendTo($("#canvasWrap"));
+
+	var scoreBox = document.createElement("div");
+	scoreBox.id = "scoreBox";
+
 	var redScore = document.createElement("div");
 	redScore.className = "score";
 	redScore.id = "redScore";
-	document.body.appendChild(redScore);
 
 	var blueScore = document.createElement("div");
 	blueScore.className = "score";
 	blueScore.id = "blueScore";
-	document.body.appendChild(blueScore);
 
 	var time = document.createElement("div");
 	time.id = "time";
 	time.className = "score";
-	document.body.appendChild(time);
+
+	scoreBox.appendChild(redScore);
+	scoreBox.appendChild(time);
+	scoreBox.appendChild(blueScore);
+	canvasWrap.appendChild(scoreBox);
+
+	$(document).ready(function() {
+		console.log("red ready");
+		fitText($("#redScore")[0]);
+		fitText($("#blueScore")[0]);
+		fitText($("#time")[0]);
+		var vp = $("#viewPort");
+		vp.css("marginLeft", "0px");
+		vp.css("marginTop", "0px");
+	});
 
 	var redLogo = document.createElement("img");
 	redLogo.id = "redLogo";
@@ -36,6 +60,16 @@ function GameView() {
 			var pad = ((55 - parseInt(im.width)) / 2) + 'px';
 			im.style.padding = '0px ' + pad + ' 0px ' + pad;
 		}
+	});
+
+	$(document).ready(function() {
+		console.log("red ready");
+		fitText($("#redScore")[0]);
+		fitText($("#blueScore")[0]);
+		fitText($("#time")[0]);
+		var vp = $("#viewPort");
+		vp.css("marginLeft", "0px");
+		vp.css("marginTop", "0px");
 	});
 
 	var public = {
