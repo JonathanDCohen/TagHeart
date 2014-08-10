@@ -1,43 +1,7 @@
 function GameView() {
-	var vp = $("#viewPort");
+	initGameView();
 
-	var canvasWrap = document.createElement("div");
-	document.body.appendChild(canvasWrap);
-	canvasWrap.style.height = vp[0].style.height;
-	canvasWrap.style.width = vp[0].style.width;
-	canvasWrap.id = "canvasWrap";
-	vp.appendTo($("#canvasWrap"));
-
-	var scoreBox = document.createElement("div");
-	scoreBox.id = "scoreBox";
-
-	var redScore = document.createElement("div");
-	redScore.className = "score";
-	redScore.id = "redScore";
-
-	var blueScore = document.createElement("div");
-	blueScore.className = "score";
-	blueScore.id = "blueScore";
-
-	var time = document.createElement("div");
-	time.id = "time";
-	time.className = "score";
-
-	scoreBox.appendChild(redScore);
-	scoreBox.appendChild(time);
-	scoreBox.appendChild(blueScore);
-	canvasWrap.appendChild(scoreBox);
-
-	$(document).ready(function() {
-		console.log("red ready");
-		fitText($("#redScore")[0]);
-		fitText($("#blueScore")[0]);
-		fitText($("#time")[0]);
-		var vp = $("#viewPort");
-		vp.css("marginLeft", "0px");
-		vp.css("marginTop", "0px");
-	});
-
+	//not in initGameView because this will be moved to the MatchView
 	var redLogo = document.createElement("img");
 	redLogo.id = "redLogo";
 	document.body.appendChild(redLogo);
@@ -62,15 +26,16 @@ function GameView() {
 		}
 	});
 
-	$(document).ready(function() {
-		console.log("red ready");
-		fitText($("#redScore")[0]);
-		fitText($("#blueScore")[0]);
-		fitText($("#time")[0]);
-		var vp = $("#viewPort");
-		vp.css("marginLeft", "0px");
-		vp.css("marginTop", "0px");
-	});
+	// $(document).ready(function() {
+	// 	console.log("red ready");
+	// 	fitText($("#redScore")[0]);
+	// 	fitText($("#blueScore")[0]);
+	// 	fitText($("#time")[0]);
+	// 	var vp = $("#viewPort");
+	// 	vp.css("marginLeft", "0px");
+	// 	vp.css("marginTop", "0px");
+	// 	vp.css("border", "none");
+	// });
 
 	var public = {
 		updateScore: function(score) {
