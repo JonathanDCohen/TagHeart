@@ -1,15 +1,6 @@
 function GameView() {
 	initGameView();
 
-	//not in initGameView because this will be moved to the MatchView
-	var redLogo = document.createElement("img");
-	redLogo.id = "redLogo";
-	document.body.appendChild(redLogo);
-
-	var blueLogo = document.createElement("img");
-	blueLogo.id = "blueLogo";
-	document.body.appendChild(blueLogo);
-
 	$("img").load(function() {
 		var im = $(this)[0];
 		console.log(im);
@@ -25,17 +16,6 @@ function GameView() {
 			im.style.padding = '0px ' + pad + ' 0px ' + pad;
 		}
 	});
-
-	// $(document).ready(function() {
-	// 	console.log("red ready");
-	// 	fitText($("#redScore")[0]);
-	// 	fitText($("#blueScore")[0]);
-	// 	fitText($("#time")[0]);
-	// 	var vp = $("#viewPort");
-	// 	vp.css("marginLeft", "0px");
-	// 	vp.css("marginTop", "0px");
-	// 	vp.css("border", "none");
-	// });
 
 	var public = {
 		updateScore: function(score) {

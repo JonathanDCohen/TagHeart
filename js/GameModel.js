@@ -31,20 +31,20 @@ function GameModel(_redScore, _blueScore, _redTeam, _blueTeam, _timeDelta) {
 		});
 	}
 
-	function setTimer(time) {
-		timer && clearInterval(timer);
-		gameTime = time || 10 * 60;
-		timer = setInterval(function() {
-			gameTime -= timeDelta / 1000;
-			if (gameTime < 0) {
-				clearInterval(timer);
-			} else {
-				gameView.updateTime(gameTime);
-			}
-		}, timeDelta);
-	}
+	// function setTimer(time) {
+	// 	timer && clearInterval(timer);
+	// 	gameTime = time || 10 * 60;
+	// 	timer = setInterval(function() {
+	// 		gameTime -= timeDelta / 1000;
+	// 		if (gameTime < 0) {
+	// 			clearInterval(timer);
+	// 		} else {
+	// 			gameView.updateTime(gameTime);
+	// 		}
+	// 	}, timeDelta);
+	// }
 
-	setTimer();
+	// setTimer();
 	setScore();
 
 	chrome.runtime.onMessage.addListener(
